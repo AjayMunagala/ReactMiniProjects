@@ -1,6 +1,7 @@
 import "./index.css";
 import App from "./App.jsx";
 import CurrentBill from "./component/CurrentBill.jsx";
+import EmployeeData from "./component/EmployeeData.jsx";
 import Even_odd from "./component/Even_odd.jsx";
 import Grade from "./component/Grade.jsx";
 import Positornegi from "./component/Positornegi.jsx";
@@ -17,8 +18,9 @@ createRoot(document.getElementById('root')).render(
     < Report />
     < Grade />
     < CurrentBill /> 
-    < ToDoList /> */
-    < StudentReg />
+    < ToDoList /> 
+    < StudentReg /> */
+    < EmployeeData />
     
     }
      
