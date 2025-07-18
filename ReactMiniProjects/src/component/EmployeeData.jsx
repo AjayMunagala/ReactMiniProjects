@@ -6,16 +6,17 @@ const EmployeeData = () => {
     const [empfullname, setEmpFullName]= useState("");
     const [emporggmail, setEmpOrgGmail]= useState("");
     const [empdesignation, setEmpDesignation]= useState("");
-    const [empsalary, setEmpSalary]= useState(0);
+    const [empsalary, setEmpSalary]= useState("");
     const [employeedata, setEmployeeData]= useState([]);
     const fun = ()=>{
-        if(!empid.trim() && empfullname.trim() && emporggmail.trim() && empdesignation.trim() && empsalary) return; 
+        if(!empid.trim() || !empfullname.trim() || !emporggmail.trim() || !empdesignation.trim() || !empsalary) return; 
         const empobj = {
             empid, 
             empfullname, 
             emporggmail,
             empdesignation,
-            empsalary
+            empsalary: Number(empsalary)
+
         }
         setEmployeeData([...employeedata,empobj]);
         setEmpId("");
